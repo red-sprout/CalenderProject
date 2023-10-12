@@ -1,2 +1,5 @@
-# CalenderProject
-Front-End project
+# Note Project
+<ul>
+  <li>Front-End personal project</li>
+  <li>Momentum chrome app- New tab page with a personal dashboard</li>
+</ul>
