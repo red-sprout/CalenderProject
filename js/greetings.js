@@ -2,6 +2,12 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
+const searchForm = document.querySelector("#search");
+const searchInput = document.createElement("input");
+const noConnection = document.createElement("h2");
+
+const logOut = document.querySelector("#log-out img");
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
@@ -15,12 +21,22 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  search.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
 }
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+function googleSubmit(event) {
+  event.preventDefault();
+  const words = searchInput.value;
+  window.open(`https://www.google.com/search?q=${words}&oq=${words}`);
+}
 
-console.log(savedUsername);
+function handleLogOut(event) {
+  localStorage.removeItem("username");
+  location.reload();
+}
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
@@ -28,3 +44,14 @@ if (savedUsername === null) {
 } else {
   paintGreetings(savedUsername);
 }
+
+if (navigator.onLine) {
+  searchForm.appendChild(searchInput);
+  searchInput.placeholder = "Google Search";
+  searchForm.addEventListener("submit", googleSubmit);
+} else {
+  searchForm.appendChild(noConnection);
+  noConnection.innerText = "Offline Mode";
+}
+
+logOut.addEventListener("click", handleLogOut);
