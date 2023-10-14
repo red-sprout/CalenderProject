@@ -6,7 +6,27 @@
     <title>Momentum J</title>
   </head>
   <body>
-    <h1>What is your name?</h1>
+    <form id="login-form" class="hidden">
+      <h1>What is your name?</h1>
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="Press enter to log-in"
+      />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
     <script src="js/background.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
