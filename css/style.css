@@ -1,4 +1,6 @@
 body {
+  animation: fadein 2s;
+  background-color: black;
   color: white;
 }
 h1 {
@@ -6,7 +8,7 @@ h1 {
   display: block;
   text-align: center;
   width: 500px;
-  height: 300px;
+  height: 50px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -23,4 +25,51 @@ img {
   bottom: 0px;
   z-index: -1;
   filter: brightness(50%);
+}
+.hidden {
+  display: none;
+}
+#greeting {
+  animation: fadein 2s;
+}
+#quote {
+  font-style: italic;
+  text-align: center;
+  width: 600px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  margin-left: -300px;
+  margin-top: -150px;
+}
+#weather {
+  text-align: right;
+}
+#login-form input {
+  width: 300px;
+  height: 30px;
+  font-size: 25px;
+  color: white;
+  outline: none;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  text-align: center;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
