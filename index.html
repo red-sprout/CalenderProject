@@ -3,9 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum J</title>
+    <title>Momentum Space</title>
   </head>
   <body>
+    <div id="date">
+      <span></span>
+    </div>
+    <div class="ampm">
+      <br /><br />
+      <span id="am">AM</span>
+      <br /><br />
+      <span id="pm">PM</span>
+    </div>
+    <div id="clock">
+      <span></span>
+    </div>
     <form id="login-form" class="hidden">
       <h1>What is your name?</h1>
       <input
@@ -15,18 +27,39 @@
         placeholder="Press enter to log-in"
       />
     </form>
+    <form id="search" class="hidden"></form>
+    <ul id="todo-list"></ul>
     <h1 id="greeting" class="hidden"></h1>
     <div id="quote">
       <span></span>
       <span></span>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div id="weather"></div>
+    <div id="log-out">
+      <img src="img/icon/logout.png" />
+      <br />Log Out
+    </div>
+    <div class="todo">
+      <span id="todo-close">x</span>
+      <ul id="todo-list"></ul>
+      <form id="todo-form">
+        <input type="text" placeholder="Write todo and press enter" />
+      </form>
+    </div>
+    <div class="dday">
+      <span id="dday-close">x</span>
+      <ul id="dday-list"></ul>
+      <form id="dday-form">
+        <input type="text" placeholder="(D-day) yyyy/mm/dd" />
+      </form>
     </div>
     <script src="js/background.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/dday.js"></script>
   </body>
 </html>
