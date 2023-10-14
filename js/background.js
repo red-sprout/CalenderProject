@@ -3,5 +3,6 @@ const chosenImage =
   backGroundImages[Math.floor(Math.random() * backGroundImages.length)];
 const imgTag = document.createElement("img");
 imgTag.src = `img/${chosenImage}`;
+imgTag.classList.add("background");
 
 document.body.appendChild(imgTag);
