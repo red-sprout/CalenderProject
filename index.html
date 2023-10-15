@@ -28,7 +28,6 @@
       />
     </form>
     <form id="search" class="hidden"></form>
-    <ul id="todo-list"></ul>
     <h1 id="greeting" class="hidden"></h1>
     <div id="quote">
       <span></span>
@@ -39,19 +38,27 @@
       <img src="img/icon/logout.png" />
       <br />Log Out
     </div>
-    <div class="todo">
+    <div class="todo hidden">
       <span id="todo-close">x</span>
       <ul id="todo-list"></ul>
       <form id="todo-form">
         <input type="text" placeholder="Write todo and press enter" />
       </form>
     </div>
-    <div class="dday">
+    <div id="open-todo">
+      <img src="img/icon/meteor.png" />
+      <span><br />To-Do</span>
+    </div>
+    <div class="dday hidden">
       <span id="dday-close">x</span>
       <ul id="dday-list"></ul>
       <form id="dday-form">
-        <input type="text" placeholder="(D-day) yyyy/mm/dd" />
+        <input type="text" placeholder="(D-day writing style) yyyy/mm/dd" />
       </form>
+    </div>
+    <div id="open-dday">
+      <img src="img/icon/stars.png" />
+      <span><br />D-Day</span>
     </div>
     <script src="js/background.js"></script>
     <script src="js/greetings.js"></script>
