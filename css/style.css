@@ -45,8 +45,8 @@ h1 {
   animation: fadein_window 2s;
   background-color: black;
   opacity: 0.5;
-  width: 30%;
-  height: 70%;
+  width: 400px;
+  height: 500px;
   border-radius: 10px;
   border: 3px solid white;
   position: absolute;
@@ -63,7 +63,7 @@ h1 {
 }
 .todo ul {
   list-style: none;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   width: 90%;
   position: relative;
@@ -72,7 +72,7 @@ h1 {
   text-align: left;
 }
 .todo ul li input {
-  width: 20px;
+  width: 15px;
   height: 20px;
   left: 10px;
   position: absolute;
@@ -80,7 +80,7 @@ h1 {
 .todo #todo-form input {
   width: 90%;
   height: 30px;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   outline: none;
   background-color: transparent;
@@ -121,8 +121,8 @@ h1 {
   animation: fadein_window 2s;
   background-color: black;
   opacity: 0.5;
-  width: 30%;
-  height: 70%;
+  width: 400px;
+  height: 500px;
   border-radius: 10px;
   border: 3px solid white;
   position: absolute;
@@ -138,7 +138,7 @@ h1 {
   right: 10px;
 }
 .dday ul {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   width: 90%;
   position: relative;
@@ -149,7 +149,7 @@ h1 {
 .dday input {
   width: 90%;
   height: 30px;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   outline: none;
   background-color: transparent;
