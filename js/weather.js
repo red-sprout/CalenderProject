@@ -19,6 +19,7 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
+  weather.removeChild(weatherImg);
   tempInfo.innerText = "No information";
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
