@@ -3,6 +3,8 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const toDoClass = document.querySelector(".todo");
 const ddayClass = document.querySelector(".dday");
+const openTodo = document.querySelector("#open-todo");
+const openDday = document.querySelector("#open-dday");
 
 const searchForm = document.querySelector("#search");
 const searchInput = document.createElement("input");
@@ -26,6 +28,8 @@ function paintGreetings(username) {
   searchForm.classList.remove(HIDDEN_CLASSNAME);
   toDoClass.classList.remove(HIDDEN_CLASSNAME);
   ddayClass.classList.remove(HIDDEN_CLASSNAME);
+  openTodo.classList.remove(HIDDEN_CLASSNAME);
+  openDday.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
 }
 

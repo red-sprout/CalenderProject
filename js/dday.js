@@ -2,7 +2,6 @@ const ddayForm = ddayClass.querySelector("#dday-form");
 const ddayInput = ddayForm.querySelector("input");
 const ddayList = ddayClass.querySelector("#dday-list");
 const xdday = ddayClass.querySelector("#dday-close");
-const openDday = document.querySelector("#open-dday");
 
 const DDAYS_KEY = "ddays";
 

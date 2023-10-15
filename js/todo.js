@@ -2,7 +2,6 @@ const toDoForm = toDoClass.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = toDoClass.querySelector("#todo-list");
 const xToDo = toDoClass.querySelector("#todo-close");
-const openTodo = document.querySelector("#open-todo");
 
 const TODOS_KEY = "todos";
 const CHECKED_KEY = "checkedTodo";
