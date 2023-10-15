@@ -10,7 +10,7 @@ const searchForm = document.querySelector("#search");
 const searchInput = document.createElement("input");
 const noConnection = document.createElement("h2");
 
-const logOut = document.querySelector("#log-out img");
+const logOut = document.querySelector("#log-out");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -30,6 +30,7 @@ function paintGreetings(username) {
   ddayClass.classList.remove(HIDDEN_CLASSNAME);
   openTodo.classList.remove(HIDDEN_CLASSNAME);
   openDday.classList.remove(HIDDEN_CLASSNAME);
+  logOut.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
 }
 
