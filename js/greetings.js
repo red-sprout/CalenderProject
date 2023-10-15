@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const toDoClass = document.querySelector(".todo");
+const ddayClass = document.querySelector(".dday");
 
 const searchForm = document.querySelector("#search");
 const searchInput = document.createElement("input");

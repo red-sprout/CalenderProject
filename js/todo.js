@@ -1,4 +1,3 @@
-const toDoClass = document.querySelector(".todo");
 const toDoForm = toDoClass.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = toDoClass.querySelector("#todo-list");
