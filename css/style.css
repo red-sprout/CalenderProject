@@ -11,7 +11,7 @@ h1 {
   height: 50px;
   position: absolute;
   left: 50%;
-  top: 650px;
+  top: 550px;
   margin-left: -250px;
   margin-top: -150px;
 }
@@ -37,7 +37,7 @@ h1 {
   height: 100px;
   position: absolute;
   left: 50%;
-  top: 500px;
+  top: 400px;
   margin-left: -250px;
   margin-top: -150px;
 }
@@ -187,7 +187,7 @@ h1 {
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 450px;
+  top: 350px;
   margin-left: -300px;
   margin-top: -150px;
 }
@@ -198,7 +198,7 @@ h1 {
   height: 100px;
   position: absolute;
   left: 50%;
-  top: 500px;
+  top: 400px;
   margin-left: -300px;
   margin-top: -150px;
 }
@@ -212,7 +212,7 @@ h1 {
   height: 50px;
   position: absolute;
   left: 50%;
-  top: 850px;
+  top: 750px;
   margin-left: -300px;
   margin-top: -150px;
 }
@@ -241,7 +241,7 @@ h1 {
   border-bottom: 3px solid white;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 650px;
   text-align: center;
   margin-left: -150px;
   margin-top: -150px;
@@ -251,7 +251,7 @@ h1 {
   height: 30px;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 650px;
   text-align: center;
   margin-left: -150px;
   margin-top: -150px;
@@ -267,7 +267,7 @@ h1 {
   border: 3px solid white;
   position: absolute;
   left: 50%;
-  top: 750px;
+  top: 650px;
   text-align: center;
   margin-left: -10%;
   margin-top: -150px;
