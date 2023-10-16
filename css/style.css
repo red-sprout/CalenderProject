@@ -53,6 +53,7 @@ h1 {
   left: 60px;
   bottom: 100px;
   margin: 0%;
+  overflow: auto;
 }
 .todo #todo-close {
   font-size: 20px;
@@ -71,7 +72,7 @@ h1 {
   left: 10px;
   top: 20px;
   text-align: left;
-  overflow: auto;
+  word-break: break-all;
 }
 .todo ul li input {
   width: 15px;
@@ -104,7 +105,7 @@ h1 {
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0px;
+  right: -15px;
 }
 #open-todo {
   animation: fadein 2s;
@@ -131,6 +132,7 @@ h1 {
   right: 60px;
   bottom: 100px;
   margin: 0%;
+  overflow: auto;
 }
 .dday #dday-close {
   font-size: 20px;
@@ -148,7 +150,7 @@ h1 {
   left: 10px;
   top: 20px;
   text-align: left;
-  overflow: auto;
+  word-break: break-all;
 }
 .dday input {
   width: 90%;
@@ -175,7 +177,7 @@ h1 {
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0px;
+  right: -15px;
 }
 #open-dday {
   animation: fadein 2s;
