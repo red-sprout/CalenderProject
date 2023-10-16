@@ -64,3 +64,8 @@ if (navigator.onLine) {
 }
 
 logOut.addEventListener("click", handleLogOut);
+
+if (savedUsername !== null) {
+  toDoClass.classList.add(HIDDEN_CLASSNAME);
+  ddayClass.classList.add(HIDDEN_CLASSNAME);
+}
