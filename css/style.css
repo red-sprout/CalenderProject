@@ -26,6 +26,9 @@ h1 {
   z-index: -1;
   filter: brightness(50%);
 }
+.middle {
+  text-decoration: line-through;
+}
 .hidden {
   display: none;
 }
